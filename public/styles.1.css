@@ -4,6 +4,9 @@ html {
     height: 100%;
     
 }
+body {
+  background-color: #212121;
+}
 
 body,
 h1,
@@ -12,8 +15,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+  font-family: 'Encode Sans Expanded', sans-serif;
 }
 
 .topnav {
@@ -47,14 +49,113 @@ color: #000;
     font-size: 24px;
     font-weight: bold;
 }
+.homeAndAbout {
+  width: 100%;
+  height: 600px;
+  padding: 30px;
+  margin: auto;
+  padding-top: 5%;
+  color: white;
+  z-index: 2;
+}
+.skills {
+  float: left;
+  width: 40%;
+  height: 400px;
+margin-right: 10%;
+}
+.title {
+  background-color: #880e4f;
+  border-radius: 50px;
+  border: 1px solid #880e4f;
+  padding: 20px;
+  width: 100%;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  margin: 10px;
+}
+.languages {
+  background-color: #880e4f;
+  border-radius: 50px;
+  border: 1px solid #880e4f;
+  padding: 20px;
+  width: 100%;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  margin: 20px;
+}
+.databases {
+  background-color: #880e4f;
+  border-radius: 50px;
+  border: 1px solid #880e4f;
+  padding: 20px;
+  width: 100%;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  margin: 20px;
+}
+.libraries {
+  background-color: #880e4f;
+  border-radius: 50px;
+  border: 1px solid #880e4f;
+  padding: 20px;
+  width: 100%;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  margin: 20px;
+}
+.tools {
+  background-color: #880e4f;
+  border-radius: 50px;
+  border: 1px solid #880e4f;
+  padding: 20px;
+  width: 100%;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  margin: 20px;
+}
+.blurb {
+  margin-left: 35%;
+  height: 400px;
+  padding: 20px;
+}
+.info {
+  margin-top: 50px;
+}
+.blurbText1 {
+  padding: 10px;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  font-weight: normal
+}
+.blurbText2 {
+  padding: 10px;
+  font-size: 1.4em;
+  line-height: 1.4em;
+}
+
+.blurbText3 {
+  padding: 10px;
+  font-size: 1.4em;
+  line-height: 1.4em;
+}
 /*top background*/
 .intro-header { 
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
-    background: url('http://blog.hdwallsource.com/wp-content/uploads/2014/11/purple-gradient-wallpaper-26053-26738-hd-wallpapers.jpg') no-repeat center center fixed;
-   background-size: cover;
-    height: 600px;
+    margin-left: 3%;
+    margin-top: 5%;
+    height: 300px;
+    color: white;
+    float: left;
+    width: 300px;
+    background-color: #560027;
 }
 .bg-overlay {
   background:rgba(0,0,0, 0.3);
@@ -93,6 +194,9 @@ color: #000;
 .intro-message > h3 {
     text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
   color: black;
+}
+.portfolio1 {
+  margin: 0 !important;
 }
 
 @media(max-width:767px) {
@@ -197,18 +301,7 @@ hr.intro-divider {
   font-size: 22.5px;
 }
 
-h2.section-heading {
-    margin-top: 100px;
-    font-size: 3em;
-    color: white;
-    text-align: center;
-    text-shadow:
-       3px 3px 0 #000,
-     -1px -1px 0 #000,  
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-       1px 1px 0 #000;
-}
+
 
 
   /*text*/
@@ -238,9 +331,8 @@ h2.section-heading {
 
 /* Portfolio section*/
 section {
-  color: black;
-  background: url('http://powerpictures.crystalgraphics.com/photo/gradient_abstract_purple_background_cg8p2540505c_th.jpg') no-repeat center center fixed;
-  background-size: cover;
+  color: white;
+background-color: #560027
 }
 
  #below-section {
@@ -251,13 +343,6 @@ section {
   color: white;
 }
 
-/*.portfolio-item {
-  overflow: hidden;
-  padding: 7px;
-  color: white;
-  height: 308px;
-}*/
-/*Portfolio items*/
 
 #portfolio .portfolio-item {
   margin: 0 0 15px;
@@ -351,18 +436,13 @@ section {
 }
 
 .banner {
-    padding: 100px 0;
-    background: url('https://s-media-cache-ak0.pinimg.com/originals/79/3e/a7/793ea7f5acfb9af13976c3d5d478a37e.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 755px;
+    background-color: #212121;
+    text-align: center;
+    padding: 100px;
+    padding-bottom: 150px;
+
 }
 
-.bg-overlay4 {
-  margin-top: -100px;
-  padding: 100px 0;
-  background: rgba(255,255,255, 0.3);
-  height: 755px;
-}
 .media-contact{
   text-align: center;
 }
@@ -371,14 +451,7 @@ section {
   margin-top: 20px;
   padding-bottom: 20px;
   font-size: 3em;
-    color: white;
-    text-align: center;
-    text-shadow:
-       3px 3px 0 #000,
-     -1px -1px 0 #000,  
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-       1px 1px 0 #000;
+color: white;
 }
 h2.connect {
    margin: 0;

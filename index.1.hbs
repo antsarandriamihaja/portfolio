@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Kanit|Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.1.css">
 </head>
@@ -28,9 +28,6 @@
                         <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
                         <a href="#portfolio">Portfolio</a>
                     </li>
                     <li>
@@ -45,44 +42,39 @@
 
     <!-- Header -->
     <a name="home"></a>
-    <div class="intro-header">
-        <div class="bg-overlay">
-            <div class="container intro">
-                <h1 id='position'>Web developer</h1>
-                <h3> Javascript, NodeJs, ReactJs, PostgreSQL, jQuery, Bootstrap, Git.</h3>
-                
+
+    <div class="homeAndAbout">
+        <div class="skills">
+            <div class="title">
+                <h4>Web Developer: Frontend and Backend</h4>
+            </div>
+            <div class="languages">
+                <h4>Javascript, HTML5, CSS3, some Python</h4>
+            </div>
+            <div class="libraries">
+                <h4>Node, React, jQuery, Bootstrap, some React-native...</h4>
+            </div>
+            <div class="tools">
+                <h4>Git, some Chai, Mocha, and Jest</h4>
+            </div>
+            <div class="databases">
+                <h4>MongoDB(noSQL), PostgreSQL</h4>
             </div>
         </div>
-    </div>
-
-
-    <a name="about"></a>
-    <div class="content-section-a">
-        <div class="bg-overlay2">
-            <div class="container middle_section">
-                <div class="row">
-                    <h2 class="section-heading">About me</h2>
-                    </br>
-                    <h4 class="lead">I'm a self-taught web developer.</br>
-                        I learned to code initially to automate a task I performed as a biochemist, but I ended up enjoying it so I decided to switch
-                        careers and become a web developer.</br>
-                        I am looking for great people with whom I can work and share my newfound passion with.</br>
-                    </h4>
-                    <p class='tech'>Languages:</p>
-                    <p class='tech_list'>HTML5, CSS3, Javascript, some Python </p>
-                    <p class='tech'>Libraries: </p>
-                    <p class='tech_list'> Express.js, jQuery, Bootstrap, Underscore & lodash, Mongoose, some Mocha. </p>
-                    <p class='tech'>Tools:</p>
-                    <p class='tech_list'>Git,React, Node, MongoDB, Agile Methodologies.</p>
-
-
-                </div>
-
+        <div class="blurb">
+            <div class='info'>
+                <h3 class='blurbText1'>I am a web developer. I learned to code initially to automate a task I performed as a biochemist, but I ended
+                    up enjoying it so I decided to switch careers and become a web developer.</h3>
+                <h3 class='blurbText2'>I work as a full-stack developer at a start-up called Aria. I am currently seeking new opportunities, particularly
+                    for front-end dev positions based in Montreal.</h3>
+                <h3 class='blurbText3'> As a side project, I am currently learning some cool JS libraries like React-native and Babylon.js</h3>
             </div>
-            <!-- /.container -->
         </div>
+
     </div>
     </div>
+    </div>
+
 
     <!-- Portfolio Grid Section -->
     <a name="portfolio"></a>
@@ -90,11 +82,42 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">My Portfolio</h2>
+                    <h2 class="section-heading">Projects</h2>
                 </div>
             </div>
             <!-- Portfolio img1 -->
             <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item portfolio1">
+                    <a href="apparia.co" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <img src="https://preview.ibb.co/gihm3w/Screenshot_2017_10_3_Aria_Counselling_made_easy_Contact_Us.png" class="img-responsive" alt="calculator">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Aria</h4>
+                        <p id="small-text" class="text-muted">React, Node, PostgreSQL</p>
+                    </div>
+                </div>
+                <!-- End of Portfolio img1 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="http://contacts-lightspeed.herokuapp.com/" target="_blank" class="portfolio-link" data-toggle="modal">
+                         <img src="https://preview.ibb.co/b6MkwG/Screenshot_2017_10_3_Contact_List.png" alt="Screenshot_2017_10_3_Contact_List" class="img-responsive" alt="contactList">
+                    </a>
+
+                    <div class="portfolio-caption">
+                        <h4>Contact List</h4>
+                        <p id="small-text" class="text-muted">React, React-motion</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://samsao-repo.herokuapp.com/" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <img src="https://preview.ibb.co/iO1Diw/Screenshot_2017_10_3_Samsao_Repos.png" class="img-responsive" alt="calculator">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Github repositories</h4>
+                        <p id="small-text" class="text-muted">React</p>
+                    </div>
+                </div>
+
+
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="http://codepen.io/arandriamihaja/full/amOXEA/" target="_blank" class="portfolio-link" data-toggle="modal">
                         <img src="https://image.ibb.co/gk8sY5/large.png" class="img-responsive" alt="calculator">
@@ -104,7 +127,6 @@
                         <p id="small-text" class="text-muted">Bootstrap and jQuery</p>
                     </div>
                 </div>
-                <!-- End of Portfolio img1 -->
 
                 <!-- Portfolio img2 -->
                 <div class="col-md-4 col-sm-6 portfolio-item portfolio2">
@@ -170,39 +192,34 @@
     </section>
 
     <a name="contact"></a>
-    <div class="banner">
-        <div class="bg-overlay4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2 class=" contact">Contact me </h2>
-                    </div>
-                    </br>
-                    <ul class="list-inline intro-social-buttons media-contact">
-                        <li>
-                            <a href="https://twitter.com/antsarand" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/antsarandriamihaja" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/antsa-randriamihaja-09936663/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
-                        </li>
-                        <li>
-                            <a href="https://www.freecodecamp.com/antsarandriamihaja" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-free-code-camp fa-fw"></i> <span class="network-name">freeCodeCamp</span></a>
-                        </li>
-                        <li>
-                            <a href="https://codepen.io/arandriamihaja" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-codepen fa-fw"></i> <span class="network-name">Codepen</span></a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.container -->
+    <div class="banner" id="banner">
+            <div class="col-lg-12">
+                <h2 class=" contact">Contact me </h2>
             </div>
-        </div>
+            </br>
+            <ul class="list-inline intro-social-buttons media-contact">
+                <li>
+                    <a href="https://twitter.com/antsarand" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                </li>
+                <li>
+                    <a href="https://github.com/antsarandriamihaja" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/antsa-randriamihaja-09936663/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
+                </li>
+                <li>
+                    <a href="https://www.freecodecamp.com/antsarandriamihaja" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-free-code-camp fa-fw"></i> <span class="network-name">freeCodeCamp</span></a>
+                </li>
+                <li>
+                    <a href="https://codepen.io/arandriamihaja" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-codepen fa-fw"></i> <span class="network-name">Codepen</span></a>
+                </li>
+            </ul>
+
+
     </div>
-    
+
     </div>
- 
+
 </body>
 
 </html>
